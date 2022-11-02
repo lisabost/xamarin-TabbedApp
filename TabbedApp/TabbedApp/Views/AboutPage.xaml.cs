@@ -11,5 +11,15 @@ namespace TabbedApp.Views
         {
             InitializeComponent();
         }
+
+        private async void Bmi_Navigate_Button_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new BmiCalculator());
+        }
+
+        private async void Personality_Navigation_Button_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new TrueFalseQuiz());
+        }
     }
 }

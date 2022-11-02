@@ -35,11 +35,19 @@
                     <Label.FormattedText>
                         <FormattedString>
                             <FormattedString.Spans>
-                                <Span Text="Use the tabs below to switch between apps."/>
+                                <Span Text="Use the buttons or tabs below to navigate betwewen apps."/>                                
                             </FormattedString.Spans>
                         </FormattedString>
                     </Label.FormattedText>
                 </Label>
+                <Button Margin="0,10,0,0" Text="Personality Quiz"
+                        Clicked="Personality_Navigation_Button_Clicked"
+                        BackgroundColor="{StaticResource Primary}"
+                        TextColor="White" />
+                <Button Margin="0,10,0,0" Text="BMI Calculator"
+                        Clicked="Bmi_Navigate_Button_Clicked"
+                        BackgroundColor="{StaticResource Primary}"
+                        TextColor="White" />
             </StackLayout>
         </ScrollView>
     </Grid>
